@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Conset - Best Responsive Agency Template</title>
+    
+    <meta name="description" content="In this lab, I'm going to demonstrate how to create a fixed navigation, single page site with smooth scrolling, and highlighting the navigation link depending on which section is currently being viewed. This technique is great for single page sites that want to pack in lots of goodies on one page, but use a navigation with cool scrolling to section it off." />
+    
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src='js/jquery.scrollto.js'></script>
+    
+</head>
+
+
+
+<body>
+
+
+<div id="wrapper">
+
+
+<header>
+    <div class="container clearfix">
+        <div id="logo">
+            <a href="http://www.megrisoft.com/"><img src="img/logo.png" /></a>
+        </div>
+        <div id="title">
+            <h1>Conset - Agency HTML Template</h1>
+            <span><a href="#">BrilliantDot</a></span>
+        </div>
+    </div>
+</header>
+
+
+
+<div id="main">
+    <div class="container clearfix">
+        
+        
+        <div id="sidebar">
+            <div id="nav-anchor"></div>
+            <nav>
+
+                <ul>
+                    <li><a href="#home" class="nav-active">Before Start</a></li>
+                    <li><a href="#about">How To Install ?</a></li>
+					<li><a href="#navigation">Navigation Option</a></li>
+					<li><a href="#javascripts">Javascripts</a></li>
+                    <li><a href="#services">Setting & Uses</a></li>
+                </ul>
+            </nav>
+        </div><!-- /sidebar -->
+        
+        <div id="content">
+            
+            
+        
+            <section id="home">
+                <h1>Before Starting</h1>
+				<ul class="start">
+				<li>Created:<span> April 1 2022</span></li>
+				<li>Version:<span> 1.0.0</span></li>
+				<li>Last Update:<span> March 29, 2022</span></li>
+				<li>By:<span> BrilliantDot</span></li>
+				<li>Email:<span> brilliantdot@xyz.com</span></li>
+				</ul>
+				<p>
+					Thank you for purchasing the <strong>Agency Template.</strong> If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="#">here</a>. Thanks so much! 
+                </p>
+            </section>
+        
+        
+            <section id="about">
+                <h1>How To Install ?</h1>
+                <p>
+                    Setting up the HTML template is a very easy job! For install it move HTML_folder in your ftp account or open your cpannel and move it.
+                </p>
+				
+				<h1>HTML Structure</h1>
+				<p>Here is the general structure for easly customization </p>
+				<h2>Change Meta Info</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">http-equiv=</span><span style="background-color: #fff0f0">&quot;Content-Type&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;text/html; charset=UTF-8&quot;</span><span style="color: #007700">&gt;</span>
+<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">http-equiv=</span><span style="background-color: #fff0f0">&quot;X-UA-Compatible&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;IE=edge&quot;</span> <span style="color: #007700">/&gt;</span>
+<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">http-equiv=</span><span style="background-color: #fff0f0">&quot;X-UA-Compatible&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;ie=edge&quot;</span><span style="color: #007700">&gt;</span>
+<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;viewport&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;width=device-width, initial-scale=1.0&quot;</span><span style="color: #007700">&gt;</span>
+<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;description&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;Responsive and modern online agency template built on Bootstrap 4.&quot;</span><span style="color: #007700">&gt;</span>
+<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;keywords&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;education, online education, education portal&quot;</span><span style="color: #007700">&gt;</span>
+<span style="color: #007700">&lt;title&gt;</span> Conset - Agency Template <span style="color: #007700">&lt;/title&gt;</span>
+</pre></div>
+
+
+
+				<h2>Header Navigation Structure</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #007700">&lt;header</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;main-header&quot;</span><span style="color: #007700">&gt;</span>
+      <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;header-top bg-orange&quot;</span><span style="color: #007700">&gt;</span>
+          <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+              <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;top-inner&quot;</span><span style="color: #007700">&gt;</span>
+                  <span style="color: #007700">&lt;ul</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;top-left&quot;</span><span style="color: #007700">&gt;</span>
+                      <span style="color: #007700">&lt;li&gt;&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;assets/images/mail.png&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;mail&quot;</span><span style="color: #007700">&gt;</span> <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;mailto:support24@domain.com&quot;</span><span style="color: #007700">&gt;</span>support24@domain.com<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                      <span style="color: #007700">&lt;li&gt;&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;assets/images/location.png&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;map&quot;</span><span style="color: #007700">&gt;</span> Squaw Valley, California(CA).<span style="color: #007700">&lt;/li&gt;</span>
+                  <span style="color: #007700">&lt;/ul&gt;</span>
+
+                  <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;top-right ml-auto&quot;</span><span style="color: #007700">&gt;</span>
+                      <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;social-style-one&quot;</span><span style="color: #007700">&gt;</span>
+                          <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fab fa-facebook-f&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                          <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fab fa-skype&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                          <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fab fa-twitter&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                          <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fab fa-pinterest-p&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                      <span style="color: #007700">&lt;/div&gt;</span>
+                  <span style="color: #007700">&lt;/div&gt;</span>
+              <span style="color: #007700">&lt;/div&gt;</span>
+          <span style="color: #007700">&lt;/div&gt;</span>
+      <span style="color: #007700">&lt;/div&gt;</span>
+
+      <span style="color: #888888">&lt;!--Header-Upper--&gt;</span>
+      <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;header-upper&quot;</span><span style="color: #007700">&gt;</span>
+          <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container clearfix&quot;</span><span style="color: #007700">&gt;</span>
+
+              <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;header-inner d-lg-flex align-items-center&quot;</span><span style="color: #007700">&gt;</span>
+
+                  <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;logo-outer d-flex align-items-center&quot;</span><span style="color: #007700">&gt;</span>
+                      <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;logo&quot;</span><span style="color: #007700">&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;index.html&quot;</span><span style="color: #007700">&gt;&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;assets/images/logo.png&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;logo&quot;</span><span style="color: #007700">&gt;&lt;/a&gt;&lt;/div&gt;</span>
+                  <span style="color: #007700">&lt;/div&gt;</span>
+
+                  <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;nav-outer clearfix ml-lg-auto mr-lg-auto&quot;</span><span style="color: #007700">&gt;</span>
+                      <span style="color: #888888">&lt;!-- Main Menu --&gt;</span>
+                      <span style="color: #007700">&lt;nav</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;main-menu navbar-expand-lg&quot;</span><span style="color: #007700">&gt;</span>
+                          <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar-header clearfix&quot;</span><span style="color: #007700">&gt;</span>
+                              <span style="color: #888888">&lt;!-- Toggle Button --&gt;</span>
+                              <span style="color: #007700">&lt;button</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;button&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar-toggle&quot;</span> <span style="color: #0000CC">data-toggle=</span><span style="background-color: #fff0f0">&quot;collapse&quot;</span> <span style="color: #0000CC">data-target=</span><span style="background-color: #fff0f0">&quot;.navbar-collapse&quot;</span><span style="color: #007700">&gt;</span>
+                                  <span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;icon-bar&quot;</span><span style="color: #007700">&gt;&lt;/span&gt;</span>
+                                  <span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;icon-bar&quot;</span><span style="color: #007700">&gt;&lt;/span&gt;</span>
+                                  <span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;icon-bar&quot;</span><span style="color: #007700">&gt;&lt;/span&gt;</span>
+                              <span style="color: #007700">&lt;/button&gt;</span>
+                          <span style="color: #007700">&lt;/div&gt;</span>
+
+                          <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar-collapse collapse clearfix&quot;</span><span style="color: #007700">&gt;</span>
+                              <span style="color: #007700">&lt;ul</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navigation clearfix&quot;</span><span style="color: #007700">&gt;</span>
+                                  <span style="color: #007700">&lt;li</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;current-menu-item&quot;</span><span style="color: #007700">&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;index.html&quot;</span><span style="color: #007700">&gt;</span>Home<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                                  <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;about.html&quot;</span><span style="color: #007700">&gt;</span>About<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                                  <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;service-details.html&quot;</span><span style="color: #007700">&gt;</span>Services<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                                  <span style="color: #007700">&lt;li</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;dropdown&quot;</span><span style="color: #007700">&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>Pages<span style="color: #007700">&lt;/a&gt;</span>
+                                      <span style="color: #007700">&lt;ul</span> <span style="color: #007700">&gt;</span>
+                                          <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;case-details.html&quot;</span><span style="color: #007700">&gt;</span>Case Details<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                                          <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;404.html&quot;</span><span style="color: #007700">&gt;</span>404<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                                      <span style="color: #007700">&lt;/ul&gt;</span>
+                                  <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;dropdown-btn&quot;</span><span style="color: #007700">&gt;&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-angle-down&quot;</span><span style="color: #007700">&gt;&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;</span>
+                                  <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;contact.html&quot;</span><span style="color: #007700">&gt;</span>Contact<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                              <span style="color: #007700">&lt;/ul&gt;</span>
+                          <span style="color: #007700">&lt;/div&gt;</span>
+
+                      <span style="color: #007700">&lt;/nav&gt;</span>
+                      <span style="color: #888888">&lt;!-- Main Menu End--&gt;</span>
+                  <span style="color: #007700">&lt;/div&gt;</span>
+
+                  <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;menu-number&quot;</span><span style="color: #007700">&gt;</span>
+                      <span style="color: #007700">&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;assets/images/headphone.png&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;headphone&quot;</span><span style="color: #007700">&gt;</span> <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;callto:+66888666&quot;</span><span style="color: #007700">&gt;</span>+66 888 666<span style="color: #007700">&lt;/a&gt;</span>
+                  <span style="color: #007700">&lt;/div&gt;</span>
+              <span style="color: #007700">&lt;/div&gt;</span>
+
+          <span style="color: #007700">&lt;/div&gt;</span>
+      <span style="color: #007700">&lt;/div&gt;</span>
+      <span style="color: #888888">&lt;!--End Header Upper--&gt;</span>
+    <span style="color: #007700">&lt;/header&gt;</span>
+</pre></div>
+
+
+            
+				<h2>Footer Structure</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;footer</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer-section bg-black pt-150 rpt-100&quot;</span><span style="color: #007700">&gt;</span>
+            <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+                <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row&quot;</span><span style="color: #007700">&gt;</span>
+                    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-lg-3 col-6&quot;</span><span style="color: #007700">&gt;</span>
+                        <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widget contact-info-widget&quot;</span><span style="color: #007700">&gt;</span>
+                            <span style="color: #007700">&lt;h3</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widget-title&quot;</span><span style="color: #007700">&gt;</span>Get In Touch<span style="color: #007700">&lt;/h3&gt;</span>
+                            <span style="color: #007700">&lt;ul&gt;</span>
+                                <span style="color: #007700">&lt;li&gt;</span>
+                                    <span style="color: #007700">&lt;h5&gt;</span>Address:<span style="color: #007700">&lt;/h5&gt;</span>
+                                    <span style="color: #007700">&lt;p&gt;</span>(843) 846-2230 20 Island Tank Rd Beaufort, South Carolina(SC).<span style="color: #007700">&lt;/p&gt;</span>
+                                <span style="color: #007700">&lt;/li&gt;</span>
+                                <span style="color: #007700">&lt;li&gt;</span>
+                                    <span style="color: #007700">&lt;h5&gt;</span>Call Now:<span style="color: #007700">&lt;/h5&gt;</span>
+                                    <span style="color: #007700">&lt;p&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;callto:+2568964793682&quot;</span><span style="color: #007700">&gt;</span>+2 568 964 793 682<span style="color: #007700">&lt;/a&gt;&lt;/p&gt;</span>
+                                    <span style="color: #007700">&lt;p&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;callto:+8696732986346&quot;</span><span style="color: #007700">&gt;</span>+8 6967 329 863 46<span style="color: #007700">&lt;/a&gt;&lt;/p&gt;</span>
+                                <span style="color: #007700">&lt;/li&gt;</span>
+                            <span style="color: #007700">&lt;/ul&gt;</span>
+                        <span style="color: #007700">&lt;/div&gt;</span>
+                    <span style="color: #007700">&lt;/div&gt;</span>
+                    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-lg-3 col-6&quot;</span><span style="color: #007700">&gt;</span>
+                        <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widget recent-post-widget&quot;</span><span style="color: #007700">&gt;</span>
+                            <span style="color: #007700">&lt;h3</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widget-title&quot;</span><span style="color: #007700">&gt;</span>Recent Post<span style="color: #007700">&lt;/h3&gt;</span>
+                            <span style="color: #007700">&lt;ul&gt;</span>
+                                <span style="color: #007700">&lt;li&gt;</span>
+                                    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;post-item&quot;</span><span style="color: #007700">&gt;</span>
+                                        <span style="color: #007700">&lt;h5&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>Lorem Ipsum used since the is reproduced below.<span style="color: #007700">&lt;/a&gt;&lt;/h5&gt;</span>
+                                        <span style="color: #007700">&lt;p&gt;</span>01 October, 2021<span style="color: #007700">&lt;/p&gt;</span>
+                                    <span style="color: #007700">&lt;/div&gt;</span>
+                                <span style="color: #007700">&lt;/li&gt;</span>
+                                <span style="color: #007700">&lt;li&gt;</span>
+                                    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;post-item&quot;</span><span style="color: #007700">&gt;</span>
+                                        <span style="color: #007700">&lt;h5&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>Lorem Ipsum used since the is reproduced below.<span style="color: #007700">&lt;/a&gt;&lt;/h5&gt;</span>
+                                        <span style="color: #007700">&lt;p&gt;</span>01 October, 2021<span style="color: #007700">&lt;/p&gt;</span>
+                                    <span style="color: #007700">&lt;/div&gt;</span>
+                                <span style="color: #007700">&lt;/li&gt;</span>
+                            <span style="color: #007700">&lt;/ul&gt;</span>
+                        <span style="color: #007700">&lt;/div&gt;</span>
+                    <span style="color: #007700">&lt;/div&gt;</span>
+                    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-lg-3 col-6&quot;</span><span style="color: #007700">&gt;</span>
+                        <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widget menu-widget&quot;</span><span style="color: #007700">&gt;</span>
+                            <span style="color: #007700">&lt;h3</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widget-title&quot;</span><span style="color: #007700">&gt;</span>Our Services<span style="color: #007700">&lt;/h3&gt;</span>
+                            <span style="color: #007700">&lt;ul&gt;</span>
+                                <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;service-details.html&quot;</span><span style="color: #007700">&gt;</span>Business Consulting<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                                <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;service-details.html&quot;</span><span style="color: #007700">&gt;</span>Investment Advisor<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                                <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;service-details.html&quot;</span><span style="color: #007700">&gt;</span>Lawyer Consulting<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                                <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;service-details.html&quot;</span><span style="color: #007700">&gt;</span>Mortgage Advisor<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                                <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;service-details.html&quot;</span><span style="color: #007700">&gt;</span>Financial Consulting<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span style="color: #007700">&lt;/ul&gt;</span>
+                        <span style="color: #007700">&lt;/div&gt;</span>
+                    <span style="color: #007700">&lt;/div&gt;</span>
+                    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-lg-3 col-6&quot;</span><span style="color: #007700">&gt;</span>
+                        <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widget subscribe-widget&quot;</span><span style="color: #007700">&gt;</span>
+                            <span style="color: #007700">&lt;h3</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widget-title&quot;</span><span style="color: #007700">&gt;</span>Subscribe<span style="color: #007700">&lt;/h3&gt;</span>
+                            <span style="color: #007700">&lt;form</span> <span style="color: #0000CC">action=</span><span style="background-color: #fff0f0">&quot;#&quot;</span> <span style="color: #0000CC">method=</span><span style="background-color: #fff0f0">&quot;post&quot;</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;subscribe-form&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;subscribe-form&quot;</span><span style="color: #007700">&gt;</span>
+                               <span style="color: #007700">&lt;p&gt;</span>Morbi interdum mollis sapierisus. Phasellus lacinullam corpelaoreet.<span style="color: #007700">&lt;/p&gt;</span>
+                                <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-group&quot;</span><span style="color: #007700">&gt;</span>
+                                    <span style="color: #007700">&lt;input</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;email&quot;</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;email-address&quot;</span> <span style="color: #0000CC">value=</span><span style="background-color: #fff0f0">&quot;&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;Email&quot;</span> <span style="color: #0000CC">required=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>
+                                    <span style="color: #007700">&lt;button</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;submit&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;subscribe-submit&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-envelope&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+                                <span style="color: #007700">&lt;/div&gt;</span>
+                            <span style="color: #007700">&lt;/form&gt;</span>
+                            <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;social-style-two mt-20&quot;</span><span style="color: #007700">&gt;</span>
+                                <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fab fa-facebook-f&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                                <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fab fa-skype&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                                <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fab fa-twitter&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                                <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fab fa-pinterest-p&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                            <span style="color: #007700">&lt;/div&gt;</span>
+                        <span style="color: #007700">&lt;/div&gt;</span>
+                    <span style="color: #007700">&lt;/div&gt;</span>
+                <span style="color: #007700">&lt;/div&gt;</span>
+            <span style="color: #007700">&lt;/div&gt;</span>
+            
+            <span style="color: #888888">&lt;!-- Copyright Area--&gt;</span>
+            <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;copyright-area mt-95 rmt-45&quot;</span><span style="color: #007700">&gt;</span>
+               <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+                    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;copyright-inner align-items-center&quot;</span><span style="color: #007700">&gt;</span>
+                        <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;copyright-wrap order-2 order-md-1&quot;</span><span style="color: #007700">&gt;</span>
+                            <span style="color: #007700">&lt;p&gt;</span>Copyright © <span style="color: #007700">&lt;span&gt;</span>2021<span style="color: #007700">&lt;/span&gt;</span> | All Rights Reserved.<span style="color: #007700">&lt;/p&gt;</span>
+                            <span style="color: #888888">&lt;!-- Scroll Top Button --&gt;</span>
+                            <span style="color: #007700">&lt;button</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;scroll-top scroll-to-target top-btn&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fas fa-angle-double-up&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+                            <span style="color: #888888">&lt;!-- footer menu --&gt;</span>
+                        <span style="color: #007700">&lt;/div&gt;</span>
+                        <span style="color: #007700">&lt;ul</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer-menu order-1 order-md-2&quot;</span><span style="color: #007700">&gt;</span>
+                            <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>Career<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>Support<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                            <span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>FAQ<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span style="color: #007700">&lt;/ul&gt;</span>
+                    <span style="color: #007700">&lt;/div&gt;</span>
+                <span style="color: #007700">&lt;/div&gt;</span>
+            <span style="color: #007700">&lt;/div&gt;</span>
+        <span style="color: #007700">&lt;/footer&gt;</span>
+</pre></div>
+
+
+
+
+				
+				
+
+				
+
+				</section>
+			<section id="navigation">
+                <h1>Navigation Option</h1>
+				<p>Here 2 type navigation option you can change easly:</p>
+				<ul>
+				<li>Sticky Navigation</li>
+				<li>Simple Navigation</li>
+				</ul>
+				<p>By default sticky menu is active.</p>
+				<p><strong>Note:</strong> If you need simple navigation just replace nav class in header top like:</p>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;nav</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar navbar-default navbar-fixed navbar-transparent white bootsnav&quot;</span><span style="color: #007700">&gt;</span>
+</pre></div>
+<p style="text-align:center;margin-top:10px;"><strong>TO</strong></p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;nav</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar navbar-default navbar-static navbar-transparent white bootsnav&quot;</span><span style="color: #007700">&gt;</span>
+</pre></div>
+
+			</section>
+			<section id="javascripts">
+			<h1>Java Script</h1>
+			<p>This theme imports three Javascript files.</p>
+			
+			<ul>
+			<li>jQuery</li>
+			<li>My custom scripts</li>
+			<li>Some plugin</li>
+			</ul>
+			
+			<h2>Partner Carousel Script</h2>
+			<p>You can customize easly like carousel navigation, auto-play etc.</p>
+			<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">if ($(&#39;.partner-wrap&#39;).length) {
+           $(&#39;.partner-wrap&#39;).slick({
+               infinite: true,
+               autoplay: false,
+               arrows: true,
+               prevArrow: &#39;<span style="color: #007700">&lt;button</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;partner-prev&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fas fa-angle-double-left&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/button&gt;</span>&#39;,
+               nextArrow: &#39;<span style="color: #007700">&lt;button</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;partner-next&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fas fa-angle-double-right&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/button&gt;</span>&#39;,
+               pauseOnHover: false,
+               autoplaySpeed: 2000,
+               slidesToShow: 4,
+               slidesToScroll: 1,
+               responsive: [
+                   {
+                       breakpoint: 1200,
+                       settings: {
+                           slidesToShow: 4
+                       }
+                   },
+                   {
+                       breakpoint: 768,
+                       settings: {
+                           slidesToShow: 3
+                       }
+                   },
+                   {
+                       breakpoint: 400,
+                       settings: {
+                           slidesToShow: 1
+                       }
+                   }
+               ]
+           });
+       }
+</pre></div>
+
+
+
+			<h2>Testimonials Script</h2>
+			<p>Customize your testimonials script .</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #008800; font-weight: bold">let</span> reviewContainer <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelector(<span style="background-color: #fff0f0">&#39;.review-buttons&#39;</span>);
+        <span style="color: #008800; font-weight: bold">if</span> (reviewContainer) {
+            <span style="color: #008800; font-weight: bold">let</span> currentBtn <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelector(<span style="background-color: #fff0f0">&#39;.review-buttons .review-btn.active&#39;</span>);
+            currentBtn.parentElement.classList.add(<span style="background-color: #fff0f0">&#39;active-btn&#39;</span>);
+            reviewContainer.addEventListener(<span style="background-color: #fff0f0">&#39;click&#39;</span>, (e)<span style="color: #333333">=&gt;</span>{
+                <span style="color: #008800; font-weight: bold">let</span> reviewBtn <span style="color: #333333">=</span> e.target.parentElement;
+                <span style="color: #008800; font-weight: bold">if</span>( <span style="background-color: #fff0f0">&#39;A&#39;</span> <span style="color: #333333">==</span> reviewBtn.nodeName ){
+                    e.preventDefault();
+                    <span style="color: #008800; font-weight: bold">let</span> clickedIndex <span style="color: #333333">=</span> <span style="color: #007020">parseInt</span>(reviewBtn.getAttribute(<span style="background-color: #fff0f0">&#39;data-review&#39;</span>));
+                    <span style="color: #008800; font-weight: bold">let</span> itemList <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelectorAll(<span style="background-color: #fff0f0">&#39;.testimony-content .review-single&#39;</span>);
+                    <span style="color: #008800; font-weight: bold">let</span> currentReview <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelector(<span style="background-color: #fff0f0">&#39;.review-single.active&#39;</span>);
+                    <span style="color: #008800; font-weight: bold">let</span> currentBtn <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelector(<span style="background-color: #fff0f0">&#39;.review-buttons .review-btn.active&#39;</span>);
+                    <span style="color: #008800; font-weight: bold">let</span> currentBtnBox <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelector(<span style="background-color: #fff0f0">&#39;.review-buttons .active-btn&#39;</span>);
+                    currentBtnBox.classList.remove(<span style="background-color: #fff0f0">&#39;active-btn&#39;</span>);
+                    currentReview.classList.remove(<span style="background-color: #fff0f0">&#39;active&#39;</span>);
+                    currentBtn.classList.remove(<span style="background-color: #fff0f0">&#39;active&#39;</span>);
+                    itemList[clickedIndex <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>].classList.add(<span style="background-color: #fff0f0">&#39;active&#39;</span>);
+                    reviewBtn.classList.add(<span style="background-color: #fff0f0">&#39;active&#39;</span>);
+                    reviewBtn.parentElement.classList.add(<span style="background-color: #fff0f0">&#39;active-btn&#39;</span>);
+                }
+            });
+        }
+</pre></div>
+
+							<h2>Case Slider Script</h2>
+			<p>Customize your case script .</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #008800; font-weight: bold">let</span> reviewContainer <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelector(<span style="background-color: #fff0f0">&#39;.review-buttons&#39;</span>);
+        <span style="color: #008800; font-weight: bold">if</span> (reviewContainer) {
+            <span style="color: #008800; font-weight: bold">let</span> currentBtn <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelector(<span style="background-color: #fff0f0">&#39;.review-buttons .review-btn.active&#39;</span>);
+            currentBtn.parentElement.clif ($(<span style="background-color: #fff0f0">&#39;.case-wrap&#39;</span>).length) {
+           $(<span style="background-color: #fff0f0">&#39;.case-wrap&#39;</span>).slick({
+               infinite<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">true</span>,
+               autoplay<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">false</span>,
+               arrows<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">true</span>,
+               prevArrow<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&#39;&lt;button class=&quot;case-prev&quot;&gt;&lt;i class=&quot;fas fa-angle-double-left&quot;&gt;&lt;/i&gt;&lt;/button&gt;&#39;</span>,
+               nextArrow<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&#39;&lt;button class=&quot;case-next&quot;&gt;&lt;i class=&quot;fas fa-angle-double-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;&#39;</span>,
+               pauseOnHover<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">false</span>,
+               autoplaySpeed<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">2000</span>,
+               slidesToShow<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">3</span>,
+               slidesToScroll<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">1</span>,
+               responsive<span style="color: #333333">:</span> [
+                   {
+                       breakpoint<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">1200</span>,
+                       settings<span style="color: #333333">:</span> {
+                           slidesToShow<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">3</span>
+                       }
+                   },
+                   {
+                       breakpoint<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">768</span>,
+                       settings<span style="color: #333333">:</span> {
+                           slidesToShow<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">2</span>
+                       }
+                   },
+                   {
+                       breakpoint<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">475</span>,
+                       settings<span style="color: #333333">:</span> {
+                           slidesToShow<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">1</span>
+                       }
+                   }
+               ]
+           });
+       }ssList.add(<span style="background-color: #fff0f0">&#39;active-btn&#39;</span>);
+            reviewContainer.addEventListener(<span style="background-color: #fff0f0">&#39;click&#39;</span>, (e)<span style="color: #333333">=&gt;</span>{
+                <span style="color: #008800; font-weight: bold">let</span> reviewBtn <span style="color: #333333">=</span> e.target.parentElement;
+                <span style="color: #008800; font-weight: bold">if</span>( <span style="background-color: #fff0f0">&#39;A&#39;</span> <span style="color: #333333">==</span> reviewBtn.nodeName ){
+                    e.preventDefault();
+                    <span style="color: #008800; font-weight: bold">let</span> clickedIndex <span style="color: #333333">=</span> <span style="color: #007020">parseInt</span>(reviewBtn.getAttribute(<span style="background-color: #fff0f0">&#39;data-review&#39;</span>));
+                    <span style="color: #008800; font-weight: bold">let</span> itemList <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelectorAll(<span style="background-color: #fff0f0">&#39;.testimony-content .review-single&#39;</span>);
+                    <span style="color: #008800; font-weight: bold">let</span> currentReview <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelector(<span style="background-color: #fff0f0">&#39;.review-single.active&#39;</span>);
+                    <span style="color: #008800; font-weight: bold">let</span> currentBtn <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelector(<span style="background-color: #fff0f0">&#39;.review-buttons .review-btn.active&#39;</span>);
+                    <span style="color: #008800; font-weight: bold">let</span> currentBtnBox <span style="color: #333333">=</span> <span style="color: #007020">document</span>.querySelector(<span style="background-color: #fff0f0">&#39;.review-buttons .active-btn&#39;</span>);
+                    currentBtnBox.classList.remove(<span style="background-color: #fff0f0">&#39;active-btn&#39;</span>);
+                    currentReview.classList.remove(<span style="background-color: #fff0f0">&#39;active&#39;</span>);
+                    currentBtn.classList.remove(<span style="background-color: #fff0f0">&#39;active&#39;</span>);
+                    itemList[clickedIndex <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>].classList.add(<span style="background-color: #fff0f0">&#39;active&#39;</span>);
+                    reviewBtn.classList.add(<span style="background-color: #fff0f0">&#39;active&#39;</span>);
+                    reviewBtn.parentElement.classList.add(<span style="background-color: #fff0f0">&#39;active-btn&#39;</span>);
+                }
+            });
+        }
+</pre></div>
+
+				
+					
+			
+			</section>
+            <section id="services">
+                <h1>Setting & Uses</h1>
+				Setup the basic infortation.
+				
+				<p>
+				<h3>Setting The Site Title</h3>
+				To change your site title and discription go to template folder and open index file in any editor and change 
+				your site title in header like:
+				
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #007700">&lt;title&gt;</span> Conset - Agency Template <span style="color: #007700">&lt;/title&gt;</span>
+</pre></div>
+
+
+				
+				<p>
+				<h3>Setting The Footer Copyright</h3>
+			<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #007700">&lt;p&gt;</span>Copyright © <span style="color: #007700">&lt;span&gt;</span>2021<span style="color: #007700">&lt;/span&gt;</span> | All Rights Reserved.<span style="color: #007700">&lt;/p&gt;</span>
+</pre></div>
+
+				</p>
+				<p>
+				<h3>Setting for set up logo</h3>
+				To changing logo very easy job! Put your logo in images folder inside assets folder with logo.png. And put same path in index file like:
+				<pre><code><span class="green">/*img src="assets/images/logo.png" class="img-responsive"*/</span></code></pre>
+				</p>
+				<p>
+				
+
+				</p>
+				
+            </section>
+
+			  <section id="blog">
+                <h1>Credits</h1>
+                <p>
+					<ul>
+					<li>Images: <a href="https://www.pexels.com/" target="_blank">Pexels/</a> And <a href="https://pixabay.com/" target="_blank">Pixabay</a></li>
+					<li>Carousel: <a href="https://kenwheeler.github.io/slick/" target="_blank">Slick Slider</a>
+					<li>Icon: <a href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a>, <a href="https://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons" target="_blank">Line Icon</a></li></li>
+					<li>Fonts: <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+					
+					</ul>
+                </p>
+            </section>
+
+			
+			<p><strong>Note: </strong>Images not Included in download file. but screens and iphone include which made by BrilliantDot</p>
+      
+			
+			<h2>Thank you, the customer, for purchasing Agency Template</h2>
+			<span>Kind regards,</span></br>
+			<span>BrilliantDot</span>
+        
+        </div><!-- /#content -->
+        
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+       <span>© 2022 | All rights reserved.<a href="#">BrilliantDot</a></span>
+    </div>
+</footer>
+
+
+
+</div>
+
+
+
+
+
+
+<script>
+    
+
+        
+    $(document).ready(function(){
+        
+        /** 
+         * This part does the "fixed navigation after scroll" functionality
+         * We use the jQuery function scroll() to recalculate our variables as the 
+         * page is scrolled/
+         */
+        $(window).scroll(function(){
+            var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
+            var div_top = $('#nav-anchor').offset().top;
+                if (window_top > div_top) {
+                    $('nav').addClass('stick');
+                } else {
+                    $('nav').removeClass('stick');
+                }
+        });
+        
+        
+        /**
+         * This part causes smooth scrolling using scrollto.js
+         * We target all a tags inside the nav, and apply the scrollto.js to it.
+         */
+        $("nav a").click(function(evn){
+            evn.preventDefault();
+            $('html,body').scrollTo(this.hash, this.hash); 
+        });
+        
+        
+        
+        /**
+         * This part handles the highlighting functionality.
+         * We use the scroll functionality again, some array creation and 
+         * manipulation, class adding and class removing, and conditional testing
+         */
+        var aChildren = $("nav li").children(); // find the a children of the list items
+        var aArray = []; // create the empty aArray
+        for (var i=0; i < aChildren.length; i++) {    
+            var aChild = aChildren[i];
+            var ahref = $(aChild).attr('href');
+            aArray.push(ahref);
+        } // this for loop fills the aArray with attribute href values
+        
+        $(window).scroll(function(){
+            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+            var windowHeight = $(window).height(); // get the height of the window
+            var docHeight = $(document).height();
+            
+            for (var i=0; i < aArray.length; i++) {
+                var theID = aArray[i];
+                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+                var divHeight = $(theID).height(); // get the height of the div in question
+                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                    $("a[href='" + theID + "']").addClass("nav-active");
+                } else {
+                    $("a[href='" + theID + "']").removeClass("nav-active");
+                }
+            }
+            
+            if(windowPos + windowHeight == docHeight) {
+                if (!$("nav li:last-child a").hasClass("nav-active")) {
+                    var navActiveCurrent = $(".nav-active").attr("href");
+                    $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+                    $("nav li:last-child a").addClass("nav-active");
+                }
+            }
+        });
+    });
+
+</script>
+
+
+
+
+</body>
+</html>
